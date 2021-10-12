@@ -1,0 +1,43 @@
+.privilege {
+  &-container {
+    @extend %container;
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
+
+  &-title {
+    
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: 900;
+    padding-bottom: 25px;
+    text-align: center;
+  }
+
+  &-content {
+   
+    display: flex;
+  }
+
+  &-card {
+    padding: 15px;
+    flex: 0 0 25%;
+
+    &__img {
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+    }
+
+    &__title {
+      font-size: 28px;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    &__description {
+      font-size: 1.25em;
+      text-align: center;
+    }
+  }
+}

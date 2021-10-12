@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Обратный звонок</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/magnific-popup.css" />
+        <link href="https://fonts.googleapis.com/css?family=Alice&amp;subset=cyrillic" rel="stylesheet">
+
+	</head>
+	<body>
+			<!-- button -->
+			
+			<div class="text-center">
+				<a class="popup-modal button" href="#form">Обратный звонок</a>
+			</div>
+			<!-- callback form -->
+			
+			<div id="magnific-modal" class="white-popup-block mfp-hide">
+				<div class="mfpcontentBorder">
+				<a class="popup-modal-dismiss" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+				<form id="form">
+                    <p class="title">Оставьте ваш номер<br> и я перезвоню вам</p>
+                    <input type="text" class="putName" name="name" placeholder="Ваше имя" required>
+                    <input type="tel" class="putPhone" name="phone" placeholder="Ваш телефон" required>
+					<input type="datetime-local" class="putNumber" name="date" value="2017-12-09">
+                    <input type="submit" name="submit" class="btn" value="ЗАКАЗАТЬ ЗВОНОК">
+                    <input type="hidden" name="formData" value="Заявка с сайта">
+                </form>
+				</div>
+			</div>
+			
+		<!-- Scripts -->
+			<script type="text/javascript" src="js/jquery.min.js"></script>
+			<script type="text/javascript" src="js/maskedinput.min.js"></script>			
+			<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+			<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

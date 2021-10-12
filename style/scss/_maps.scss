@@ -1,0 +1,64 @@
+.maps {
+  &-container {
+    @extend %container;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  &-section {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    &__img {
+      width: 100%;
+    }
+  }
+
+  &-card {
+    position: absolute;
+
+    @include lg-min {
+      top: 10%;
+      left: 30%;
+      padding: 2%;
+    }
+
+
+    @include lg {
+      display: none;
+      
+    }
+
+    background-color: #f0f0f0;
+    
+    box-shadow: 0 0 7px 1px rgba(19, 2, 53, 0.4);
+
+    &__title {
+      
+       font-size: 20px;
+         font-weight: 900;
+    }
+
+    &__descriprion {
+      margin-top: 20px;
+      font-size: 16px;
+      @include lg-min {
+        margin-top: 2%;
+      }
+
+      
+
+      &-dt {
+        @include lg-min {
+          margin-top: 3%;
+        }
+        font-weight: 800;
+      }
+      &-dd {
+        font-weight: 400;
+      }
+    }
+  }
+}

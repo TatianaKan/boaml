@@ -1,0 +1,91 @@
+.header {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @extend %container;
+
+    
+  }
+  &-menu {
+    z-index: 1;
+    height: 60px;
+    // width: 2400px;
+    border-radius: 15px;
+    margin-top: 20px;
+
+    background: rgb(28, 211, 47);
+    background: linear-gradient(
+      90deg,
+      rgba(28, 211, 47, 1) 0%,
+      rgba(88, 241, 103, 1) 38%,
+      rgba(119, 255, 132, 0) 100%
+    );
+
+
+    @include xl-lg {
+
+    };
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+
+      justify-content: center;
+
+      &-item {
+        padding: 15px 20px 15px 20px;
+        &:nth-child(1) {
+          padding-left: 0;
+        }
+      }
+
+      &-link {
+        color: black;
+        font-size: 24px;
+        width: 700;
+        text-decoration: none;
+      }
+
+      &-img {
+        margin-top: -35px;
+      }
+    }
+  }
+
+  &-info {
+    z-index: 1;
+    height: 50px;
+    max-width: 2370px;
+    padding-right: 5px;
+    border-radius: 15px;
+    // width: 100%;
+    margin-top: 20px;
+
+    background: rgb(166, 245, 132);
+    background: linear-gradient(
+      90deg,
+      rgba(166, 245, 132, 0) 0%,
+      rgba(28, 210, 46, 1) 100%
+    );
+    &__list {
+      justify-content: right;
+      // padding-top: 10px;
+      text-align: right;
+      &-item {
+        padding: 0 20px;
+        text-decoration: none;
+        color: black;
+        font-weight: 400;
+        font-size: 16px;
+      }
+      &-icon {
+        padding-left: 5px;
+        padding-top: 20px;
+        font-size: 35px;
+        color: #2b4434;
+      }
+    }
+  }
+}
