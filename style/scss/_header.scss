@@ -4,8 +4,6 @@
     flex-direction: column;
     justify-content: center;
     @extend %container;
-
-    
   }
   &-menu {
     z-index: 1;
@@ -22,10 +20,8 @@
       rgba(119, 255, 132, 0) 100%
     );
 
-
     @include xl-lg {
-
-    };
+    }
 
     &__list {
       display: flex;
@@ -46,10 +42,22 @@
         font-size: 24px;
         width: 700;
         text-decoration: none;
+        @include md {
+          font-size: 16px;
+        }
+
+        @include md-xs {
+          font-size: 14px;
+        }
+
+        @include xs-xx {
+          font-size: 12px;
+        }
       }
 
       &-img {
         margin-top: -35px;
+        width: 80%;
       }
     }
   }
@@ -69,6 +77,7 @@
       rgba(166, 245, 132, 0) 0%,
       rgba(28, 210, 46, 1) 100%
     );
+
     &__list {
       justify-content: right;
       // padding-top: 10px;
@@ -78,13 +87,35 @@
         text-decoration: none;
         color: black;
         font-weight: 400;
-        font-size: 16px;
+
+        @include md {
+          font-size: 16px;
+        }
+
+        @include md-xs {
+          font-size: 14px;
+        }
+
+        @include xs-xx {
+          font-size: 12px;
+        }
       }
       &-icon {
         padding-left: 5px;
-        padding-top: 20px;
-        font-size: 35px;
+        align-content: center;
+
         color: #2b4434;
+        @include md-min {
+          font-size: 35px;
+        }
+
+        @include md-xs {
+          font-size: 25px;
+        }
+
+        @include xs-xx {
+          font-size: 20px;
+        }
       }
     }
   }

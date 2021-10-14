@@ -1,5 +1,16 @@
 %container {
     margin: 0 auto;
-    padding-left: 215px;
-    padding-right: 215px;
+    // padding-left: 215px;
+    // padding-right: 215px;
+    @include lg-min {
+        padding: 0 215px;
+      }
+    
+      @include lg-sm {
+        padding: 0 50px;
+      }
+    
+      @include sm {
+        padding: 0 15px;
+      }
 }

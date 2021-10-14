@@ -1,25 +1,11 @@
 @import "../../fonts/montserrat.css";
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 
-html {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-}
-body {
-  width: 100%;
-  // max-width: 1380px;
-  // overflow: hidden;
-  
-}
 @import "variables";
 @import "mixins-media";
 @import "extends";
 
+@import "common";
 
 @import "header";
 @import "main";
@@ -32,26 +18,3 @@ body {
 @import "footer";
 
 
-.overlay {
-
-  background: rgb(145, 254, 156);
-  background: linear-gradient(
-    170deg,
-    rgba(145, 254, 156, 1) 19%,
-    rgba(88, 241, 103, 1) 36%,
-    rgba(145, 254, 156, 1) 49%,
-    rgba(255, 255, 255, 0.2777485994397759) 70%,
-    rgba(255, 255, 255, 0) 90%
-  );
-  height: 965px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-}
-
-article {
-  display: block;
-}

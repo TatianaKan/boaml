@@ -18,39 +18,52 @@
   }
 
   &-item {
-     @include sm-xx {
+    @include sm-xx {
       margin-right: 5px;
-     }
+    }
 
-     
-     @include md {
+    @include md {
       padding-right: 10px;
-     }
+    }
 
-     &:first-child {
+    &:first-child {
       margin-right: 0;
-     }
+    }
 
-      &:last-child {
-          margin-right: 0;
-      }
+    &:last-child {
+      margin-right: 0;
+    }
     & p {
-      
       font-weight: 400;
       letter-spacing: 0.025vh;
 
       @include md-min {
         font-size: 18px;
-       }
+      }
 
-       
       @include md-sm {
         font-size: 14px;
-       }
+      }
 
       @include sm-xx {
-        font-size: 12px;
-       }
+        font-size: 10px;
+      }
+    }
+  }
+
+  &-icon {
+    padding-left: 5px;
+    padding-top: 20px;
+    
+    color: #2b4434;
+    @include md-min {
+      font-size: 35px;
+    }
+    @include md-sm {
+      font-size: 15px;
+    }
+    @include sm-xx {
+      font-size: 10px;
     }
   }
 

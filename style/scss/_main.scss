@@ -15,7 +15,18 @@
   }
   &-image {
     margin-top: 20px;
-    // width: 100%;
+    width: 100%;
+    @include md-min {
+      width: 100%;
+    }
+
+    @include md-xs {
+      width: 70%;
+    }
+
+    @include xs-xx {
+      width: 30%;
+    }
   }
 
   &-title {

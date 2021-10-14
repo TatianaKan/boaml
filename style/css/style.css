@@ -1,4 +1,29 @@
 @import "../../fonts/montserrat.css";
+/* xl */
+/* lg */
+/* md */
+/* sm */
+/* xs */
+/* xx */
+.footer-container, .maps-container, .gallery-container, .privilege-container, .about, .main-container, .header-container {
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .footer-container, .maps-container, .gallery-container, .privilege-container, .about, .main-container, .header-container {
+    padding: 0 215px;
+  }
+}
+@media (max-width: 1199.8px) and (min-width: 768px) {
+  .footer-container, .maps-container, .gallery-container, .privilege-container, .about, .main-container, .header-container {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 767.8px) {
+  .footer-container, .maps-container, .gallery-container, .privilege-container, .about, .main-container, .header-container {
+    padding: 0 15px;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -12,19 +37,24 @@ html {
 }
 
 body {
-  width: 100%;
+  min-width: xx;
+  margin: 0 auto;
 }
 
-/* xl */
-/* lg */
-/* md */
-/* sm */
-/* xs */
-/* xx */
-.footer-container, .maps-container, .gallery-container, .privilege-container, .about, .main-container, .header-container {
-  margin: 0 auto;
-  padding-left: 215px;
-  padding-right: 215px;
+.overlay {
+  background: #91fe9c;
+  background: linear-gradient(170deg, #91fe9c 19%, #58f167 36%, #91fe9c 49%, rgba(255, 255, 255, 0.2777485994) 70%, rgba(255, 255, 255, 0) 90%);
+  height: 965px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+article {
+  display: block;
 }
 
 .header-container {
@@ -73,8 +103,24 @@ body {
   width: 700;
   text-decoration: none;
 }
+@media (max-width: 991.8px) {
+  .header-menu__list-link {
+    font-size: 16px;
+  }
+}
+@media (max-width: 991.8px) and (min-width: 576px) {
+  .header-menu__list-link {
+    font-size: 14px;
+  }
+}
+@media (max-width: 575.8px) and (min-width: 480px) {
+  .header-menu__list-link {
+    font-size: 12px;
+  }
+}
 .header-menu__list-img {
   margin-top: -35px;
+  width: 80%;
 }
 .header-info {
   z-index: 1;
@@ -98,13 +144,42 @@ body {
   text-decoration: none;
   color: black;
   font-weight: 400;
-  font-size: 16px;
+}
+@media (max-width: 991.8px) {
+  .header-info__list-item {
+    font-size: 16px;
+  }
+}
+@media (max-width: 991.8px) and (min-width: 576px) {
+  .header-info__list-item {
+    font-size: 14px;
+  }
+}
+@media (max-width: 575.8px) and (min-width: 480px) {
+  .header-info__list-item {
+    font-size: 12px;
+  }
 }
 .header-info__list-icon {
   padding-left: 5px;
-  padding-top: 20px;
-  font-size: 35px;
+  -ms-flex-line-pack: center;
+      align-content: center;
   color: #2b4434;
+}
+@media (min-width: 992px) {
+  .header-info__list-icon {
+    font-size: 35px;
+  }
+}
+@media (max-width: 991.8px) and (min-width: 576px) {
+  .header-info__list-icon {
+    font-size: 25px;
+  }
+}
+@media (max-width: 575.8px) and (min-width: 480px) {
+  .header-info__list-icon {
+    font-size: 20px;
+  }
 }
 
 .main {
@@ -121,6 +196,22 @@ body {
 }
 .main-image {
   margin-top: 20px;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .main-image {
+    width: 100%;
+  }
+}
+@media (max-width: 991.8px) and (min-width: 576px) {
+  .main-image {
+    width: 70%;
+  }
+}
+@media (max-width: 575.8px) and (min-width: 480px) {
+  .main-image {
+    width: 30%;
+  }
 }
 .main-title {
   display: -webkit-box;
@@ -648,26 +739,30 @@ strong {
 }
 @media (max-width: 767.8px) and (min-width: 480px) {
   .footer-item p {
-    font-size: 12px;
+    font-size: 10px;
+  }
+}
+.footer-icon {
+  padding-left: 5px;
+  padding-top: 20px;
+  color: #2b4434;
+}
+@media (min-width: 992px) {
+  .footer-icon {
+    font-size: 35px;
+  }
+}
+@media (max-width: 991.8px) and (min-width: 768px) {
+  .footer-icon {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767.8px) and (min-width: 480px) {
+  .footer-icon {
+    font-size: 10px;
   }
 }
 .footer-logo {
   width: 50%;
   padding: 10px 0 10px 0;
-}
-
-.overlay {
-  background: #91fe9c;
-  background: linear-gradient(170deg, #91fe9c 19%, #58f167 36%, #91fe9c 49%, rgba(255, 255, 255, 0.2777485994) 70%, rgba(255, 255, 255, 0) 90%);
-  height: 965px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-}
-
-article {
-  display: block;
 }
