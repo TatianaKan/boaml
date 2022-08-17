@@ -23,30 +23,31 @@
         "img1  img2 img3"
         "img1 img7 img6"
         "img4 img5 img6";
-    };
+    }
 
     @include md-sm {
       gap: 15px;
       grid-template-areas:
         "img1  img2 img3"
         "img4 img5 img6";
-    };
+    }
     @include sm-xs {
+      grid-template-columns: repeat(2, 1fr);
       gap: 5px;
       grid-template-areas:
         "img1  img2"
         "img3 img4"
         "img5 img6";
-    };
+    }
 
     @include xs-xx {
-      gap: 2px;
+      grid-template-columns: 1fr;
+     
+      gap: 10px;
       grid-template-areas:
-        "img1"  "img2" "img3"
+        "img1" "img2" "img3"
         "img4" "img5" "img6";
-    };
-
-
+    }
   }
 
   &-item {
